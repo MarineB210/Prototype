@@ -28,8 +28,56 @@ class Pawn:
         return False
     else:
         return True
+   
+   def MoveRight() :
+    coordonateX = #coordonné dans la classe
+    coordonateY = #coordonné dans la classe
+    verification = check(coordonateX,coordonateY+1)
+    if verification == true :
+        self.matrice[coordonateX][coordonateY] = 0 
+        self.matrice[coordonateX][coordonateY+1] = 2
+        return #coordonné du nouveau point du pion
+    else :
+        message = "Impossible d'aller à droite!"
+        return message
 
-    def moveRight(self):                    #même code pour le moveLeft.
+def MoveLeft() :
+    coordonateX = #coordonné dans la classe
+    coordonateY = #coordonné dans la classe
+    verification = check(coordonateX coordonateY-1)
+    if verification == true :
+        self.matrice[coordonateX][coordonateY] = 0 
+        self.matrice[coordonateX][coordonateY-1] = 2
+        return #coordonné du nouveau point du pion dans la classe
+    else :
+        message = "Impossible d'aller à gauche!"
+        return message
+
+def MoveUp() :
+    coordonateX = #coordonné dans la classe
+    coordonateY = #coordonné dans la classe
+    verification = check(coordonateX-1 coordonateY)
+    if verification == true :
+        self.matrice[coordonateX][coordonateY] = 0 
+        self.matrice[coordonateX-1][coordonateY] = 2
+        return #coordonné du nouveau point du pion
+    else :
+        message = "Impossible d'aller en haut!"
+        return message
+
+def MoveDown() :
+    coordonateX = #coordonné dans la classe
+    coordonateY = #coordonné dans la classe
+    verification = check(coordonateX+1 coordonateY)
+    if verification == true :
+        self.matrice[coordonateX][coordonateY] = 0 
+        self.matrice[coordonateX+1][coordonateY] = 2
+        return #coordonné du nouveau point du pion
+    else :
+        message = "Impossible d'aller en bas!"
+        return message
+
+    """def moveRight(self):                    #même code pour le moveLeft.
         """..."""
         if pass:
             """..."""
@@ -45,7 +93,7 @@ class Pawn:
             self.matrice[self.y][self.x] = 0
             self.y = y
             self.matrice[self.y][self.x] = 2
-            """..."""
+            """... """                           """
         
     def addPawn(self):
         """ Ajoute le pion dans la matrice"""
