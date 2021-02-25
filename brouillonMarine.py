@@ -33,7 +33,7 @@ class Pawn:
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
     verification = check(coordonateX,coordonateY+1)
-    if verification == true :
+    if verification == True :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX][coordonateY+1] = 2
         return #coordonné du nouveau point du pion
@@ -45,7 +45,7 @@ def MoveLeft() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
     verification = check(coordonateX,coordonateY-1)
-    if verification == true :
+    if verification == True :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX][coordonateY-1] = 2
         return #coordonné du nouveau point du pion dans la classe
@@ -57,7 +57,7 @@ def MoveUp() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
     verification = check(coordonateX-1,coordonateY)
-    if verification == true :
+    if verification == True :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX-1][coordonateY] = 2
         return #coordonné du nouveau point du pion
@@ -69,7 +69,7 @@ def MoveDown() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
     verification = check(coordonateX+1,coordonateY)
-    if verification == true :
+    if verification == True :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX+1][coordonateY] = 2
         return #coordonné du nouveau point du pion
