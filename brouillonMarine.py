@@ -44,7 +44,7 @@ class Pawn:
 def MoveLeft() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
-    verification = check(coordonateX coordonateY-1)
+    verification = check(coordonateX,coordonateY-1)
     if verification == true :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX][coordonateY-1] = 2
@@ -56,7 +56,7 @@ def MoveLeft() :
 def MoveUp() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
-    verification = check(coordonateX-1 coordonateY)
+    verification = check(coordonateX-1,coordonateY)
     if verification == true :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX-1][coordonateY] = 2
@@ -68,7 +68,7 @@ def MoveUp() :
 def MoveDown() :
     coordonateX = #coordonné dans la classe
     coordonateY = #coordonné dans la classe
-    verification = check(coordonateX+1 coordonateY)
+    verification = check(coordonateX+1,coordonateY)
     if verification == true :
         self.matrice[coordonateX][coordonateY] = 0 
         self.matrice[coordonateX+1][coordonateY] = 2
