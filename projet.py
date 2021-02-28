@@ -15,5 +15,6 @@ class Point:
         else:
             self.x = x
             self.y = y
+
     def __str__(self):
         return '%g,%g' % (self.x, self.y)
