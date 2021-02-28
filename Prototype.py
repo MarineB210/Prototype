@@ -4,13 +4,13 @@ class Pawn:
 #Ajoute les détails pour créer le tableau dans la class Pawn.
 
     def __init__(self,x,y):                    #Pas de paramètre pour la matrice car elle aura une taille fixe.
-       self.matrice = [[1,1,1,1,1,1,1],        # x --> sous-liste, y ---> élément de la sous-liste.
-                       [1,0,0,0,0,0,1],    #matrice de taille 6x7.
-                       [1,0,0,0,0,0,1],
-                       [1,0,0,0,0,0,1],  
-                       [1,0,0,0,0,0,1],
-                       [1,1,1,1,1,1,1]]
-        #Pas oublier d'initialiser le point dans la matrice.
+        self.matrice = [[1,1,1,1,1,1,1],       # x --> sous-liste, y ---> élément de la sous-liste.
+                        [1,0,0,0,0,0,1],       #matrice de taille 6x7.
+                        [1,0,0,0,0,0,1],
+                        [1,0,0,0,0,0,1],  
+                        [1,0,0,0,0,0,1],
+                        [1,1,1,1,1,1,1]]
+
         
     def __str__(self):
         plateau = ''
@@ -19,15 +19,15 @@ class Pawn:
             plateau += "\n"
         return plateau
         
-    def check(self):
-        """ Verifie si le pion peut bouger à la position (x,y) (ligne,colonne), retourne un booleen."""
+    def check(self,x,y):
+        """ Verifie si le pion peut se placer à la position (x,y) (ligne,colonne), retourne un booleen."""
         if self.matrice[x][y] == 1:         #1 --> mur , 0 ---> case vide, ne peut pas bouger lorsque c'est 1.
             return False
         else:
             return True
    
     def MoveRight(self) :  
-        coordonateX = #coordonné dans la classe 
+        coordonateX = #coordonné dans la classe     #gérer le cas où le piont n'est pas initialisé.
         coordonateY = #coordonné dans la classe  
         verification = check(coordonateX,coordonateY+1) 
         if verification == True :
