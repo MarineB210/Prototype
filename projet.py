@@ -1,6 +1,6 @@
 class Point:
     """represente un point"""
-    def __init__(self, x=0, y=0): #les 0 sont des variables par defaut
+    def __init__(self, x=2, y=3): # variables par defaut
        
         try:
            if self.x is not int(x) or self.y is not int(y):
