@@ -11,8 +11,7 @@ class Point:
             print("Le pion ne peut pas représenter le mur")
         if self.x >= 6 or self.y >=7:
             print("Le pion ne peut pas être en dehors du plateau")
-        if self.x < 0 or self.y < 0:
-            print("Le pion ne peut être initialiser avec ces données")
+        
 
         else:
             self.x = x
