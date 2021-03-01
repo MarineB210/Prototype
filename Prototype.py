@@ -11,7 +11,7 @@ class Pawn:
                         [1,0,0,0,0,0,1],
                         [1,1,1,1,1,1,1]]
 
-        if type(x) != int and type(y) != int:
+        if type(x) != int or type(y) != int:
             print("Le pion ne peut avoir ces données, le pion a pris (2,3) par défaut")     
             self.x = 3
             self.y = 2
